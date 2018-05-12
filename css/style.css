@@ -2,17 +2,56 @@
 html, body {
 	margin: 0;
 	border: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
 }
 
 #language {
-	background: linear-gradient(to bottom left, #ff3300 0%, #ff66cc 100%);
-}
+	background: linear-gradient(31deg, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+	background-size: 200% 800%;
+
+	-webkit-animation: background 8s ease infinite;
+	-moz-animation: background 8s ease infinite;
+	-o-animation: background 8s ease infinite;
+	animation: background 8s ease infinite;
+	}
 
 #language:after {
 	content: "";
     display: table;
     clear: both;
     box-sizing: border-box;
+}
+
+.logo {
+	display: block;
+    width: 400px;
+    height: 400px;
+    background: url("/lafa/img/lion.png");
+    -webkit-background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    transition: .5s;
+}
+
+.logo:hover {
+	display: block;
+    width: 500px;
+    height: 500px;
+    background: url(/lafa/img/lion2.png);
+    -webkit-background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    transition: .5s;
+    cursor: pointer;
 }
 
 #italian, #english {
@@ -42,6 +81,11 @@ img {
 	top: 0;
 }
 
+#italian img, #english img {
+	width: 200px;
+    height: 120px;
+}
+
 .mask {
 	background: #333;
 	opacity: 0;
@@ -57,8 +101,29 @@ img {
 	opacity: .2;
 }
 
-img:hover, #italian:hover img, #english:hover img {
+#italian:hover img, #english:hover img {
 	top: -10px;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
 	transform: scale3d(1.1, 1.1, 1.1);
+}
+
+@-webkit-keyframes background {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes background {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@-o-keyframes background {
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+}
+@keyframes background { 
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
 }
