@@ -29,7 +29,7 @@ html, body {
 	display: block;
     width: 400px;
     height: 400px;
-    background: url("/lafa/img/lion.png");
+    background: url("/img/lion.png");
     -webkit-background-size: cover;
     position: absolute;
     left: 50%;
@@ -43,7 +43,7 @@ html, body {
 	display: block;
     width: 500px;
     height: 500px;
-    background: url(/lafa/img/lion2.png);
+    background: url(/img/lion2.png);
     -webkit-background-size: cover;
     position: absolute;
     left: 50%;
